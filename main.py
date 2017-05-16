@@ -13,6 +13,7 @@ from datetime import timedelta
 import warnings
 import os, shutil
 from reporter import generatePDF
+import argparse
 
 def parseInputSignal(input, leveler, tree):
 	signals = input.split(";")
@@ -137,11 +138,16 @@ if __name__ == '__main__':
 		sharpe = stats.sharpeRatioAnalyzer.getSharpeRatio(0.05)
 		print paste % (ret, sharpe)
 	"""
-	instruments = ['CTXS']
-	start = '2013-01-03'
-	end   = '2013-12-30'
-
-	calcStrategy(instruments[0], start, end, 800, 1)
+	parser = argparse.ArgumentParser(description='Process commands.')
+	parser.add_argument('instrument', metavar='I', type=str, nargs='+',
+                    help='Target instrument')
+	parser.add_argument('start', metavar='S', type=str, nargs='+',
+                    help='Start date')
+	parser.add_argument('end', metavar='E', type=str, nargs='+',
+                    help='End date')
+	args = parser.parse_args()
+	print args
+	calcStrategy(args.instrument, args.start, args.end, 800, 20)
 	#table = ""
 
 	#warnings.filterwarnings('ignore')

@@ -1,0 +1,160 @@
+\begin{table}[h]
+\centering
+\caption{CTXS результаты}
+\label{start}
+ \begin{adjustbox}{max width=0.47\textwidth}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Year       & Sharpe & Return    & \begin{tabular}[c]{@{}l@{}}Max \\ drawdown\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trades \\ Count\end{tabular} &  \begin{tabular}[c]{@{}l@{}}B\&H\\ returns\end{tabular} & \begin{tabular}[c]{@{}l@{}}B\&H\\ Sharpe\end{tabular}  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2007 Train & 2.73 & 59.64\% & 6.92\% & 42 & 36.16\% & 1.26\\ \hline
+2008 Test & -0.82 & -20.23\% & 36.66\% & 28 & -35.72\% & -0.73 \\ \hline
+\rowcolor[HTML]{C0C0C0}
+2008 Train & 1.60 & 26.88\% & 6.70\% & 26 & -35.72\% & -0.73\\ \hline
+ 2009 Test & -0.05 & 1.90\% & 6.57\% & 16 & 67.20\% & 1.52 \\ \hline
+ \rowcolor[HTML]{C0C0C0} 
+2009 Train & 3.42 & 102.75\% & 7.96\% & 40 & 67.20\% & 1.52\\ \hline
+\textbf{2010 Test}  & \textbf{ 1.64 } & \textbf{ 19.64\% } & \textbf{ 4.08\% } & \textbf{ 18 } & \textbf{ 54.37\% } & \textbf{ 1.34 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2010 Train & 1.82 & 64.59\% & 10.23\% & 15 & 54.37\% & 1.34\\ \hline
+\textbf{2011 Test}  & \textbf{ 0.29 } & \textbf{ 6.66\% } & \textbf{ 28.50\% } & \textbf{ 14 } & \textbf{ -9.04\% } & \textbf{ -0.07 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2011 Train & 1.53 & 40.58\% & 8.58\% & 14 & -9.04\% & -0.07\\ \hline
+ \textbf{2012 Test}  & \textbf{ 0.65 } & \textbf{ 11.06\% } & \textbf{ 9.25\% } & \textbf{ 21 } & \textbf{ 5.26\% } & \textbf{ 0.24 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2012 Train & 1.57 & 12.60\% & 2.76\% & 15 & 5.26\% & 0.24\\ \hline
+ 2013 Test & -0.78 & -3.27\% & 9.68\% & 18 & -8.77\% & -0.32 \\ \hline
+ \rowcolor[HTML]{C0C0C0} 
+2013 Train & 2.67 & 37.12\% & 3.56\% & 30 & -8.77\% & -0.32\\ \hline
+\textbf{2014 Test}  & \textbf{ 1.85 } & \textbf{ 21.80\% } & \textbf{ 2.99\% } & \textbf{ 34 } & \textbf{ 3.66\% } & \textbf{ 0.16 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2014 Train & 3.84 & 46.11\% & 1.51\% & 37 & 3.66\% & 0.16\\ \hline
+ \textbf{2015 Test}  & \textbf{ 3.00 } & \textbf{ 38.48\% } & \textbf{ 4.37\% } & \textbf{ 34 } & \textbf{ 19.96\% } & \textbf{ 0.69 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2015 Train & 1.69 & 18.37\% & 1.82\% & 18 & 19.96\% & 0.69\\ \hline
+ \textbf{2016 Test}  & \textbf{ 1.16 } & \textbf{ 10.98\% } & \textbf{ 3.88\% } & \textbf{ 35 } & \textbf{ 18.66\% } & \textbf{ 0.73 }\\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}\begin{table}[h]
+\centering
+\caption{EA результаты}
+\label{apple_results}
+ \begin{adjustbox}{max width=0.47\textwidth}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Year       & Sharpe & Return    & \begin{tabular}[c]{@{}l@{}}Max \\ drawdown\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trades \\ Count\end{tabular} &  \begin{tabular}[c]{@{}l@{}}B\&H\\ returns\end{tabular} & \begin{tabular}[c]{@{}l@{}}B\&H\\ Sharpe\end{tabular}  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2007 Train & 2.74 & 54.25\% & 9.78\% & 70 & 11.56\% & 0.45\\ \hline
+\textbf{2008 Test}  & \textbf{ -1.30 } & \textbf{ -33.88\% } & \textbf{ 44.81\% } & \textbf{ 38 } & \textbf{ -65.56\% } & \textbf{ -1.94 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2008 Train & 3.32 & 132.34\% & 7.19\% & 54 & -65.56\% & -1.94\\ \hline
+\textbf{2009 Test}  & \textbf{ 1.87 } & \textbf{ 28.07\% } & \textbf{ 4.35\% } & \textbf{ 30 } & \textbf{ 1.50\% } & \textbf{ 0.19 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2009 Train & 2.72 & 71.93\% & 8.78\% & 29 & 1.50\% & 0.19\\ \hline
+\textbf{2010 Test}  & \textbf{ 0.54 } & \textbf{ 10.76\% } & \textbf{ 9.25\% } & \textbf{ 22 } & \textbf{ -8.73\% } & \textbf{ -0.25 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2010 Train & 2.78 & 43.72\% & 4.86\% & 52 & -8.73\% & -0.25\\ \hline
+ 2011 Test & -0.05 & 0.11\% & 13.33\% & 34 & 23.08\% & 0.67 \\ \hline
+ \rowcolor[HTML]{C0C0C0}
+2011 Train & 1.32 & 46.63\% & 20.28\% & 14 & 23.08\% & 0.67\\ \hline
+ \textbf{2012 Test}  & \textbf{ -0.58 } & \textbf{ -16.38\% } & \textbf{ 33.46\% } & \textbf{ 12 } & \textbf{ -27.89\% } & \textbf{ -0.95 }\\ \hline \rowcolor[HTML]{C0C0C0} 
+2012 Train & 1.46 & 24.23\% & 7.94\% & 39 & -27.89\% & -0.95\\ \hline
+\textbf{2013 Test}  & \textbf{ 1.38 } & \textbf{ 24.36\% } & \textbf{ 4.34\% } & \textbf{ 44 } & \textbf{ 53.26\% } & \textbf{ 1.30 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2013 Train & 3.62 & 58.90\% & 5.01\% & 57 & 53.26\% & 1.30\\ \hline
+ \textbf{2014 Test}  & \textbf{ 2.53 } & \textbf{ 26.16\% } & \textbf{ 3.33\% } & \textbf{ 46 } & \textbf{ 97.53\% } & \textbf{ 2.22 }\\ \hline \rowcolor[HTML]{C0C0C0} 
+2014 Train & 5.10 & 112.49\% & 4.00\% & 36 & 97.53\% & 2.22\\ \hline
+\textbf{2015 Test}  & \textbf{ 1.46 } & \textbf{ 32.30\% } & \textbf{ 11.97\% } & \textbf{ 41 } & \textbf{ 44.03\% } & \textbf{ 1.33 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2015 Train & 4.59 & 95.09\% & 4.00\% & 74 & 44.03\% & 1.33\\ \hline
+ 2016 Test & 0.44 & 8.71\% & 12.76\% & 52 & 19.65\% & 0.71 \\ \hline
+
+\end{tabular}
+\end{adjustbox}
+\end{table}\begin{table}[h]
+\centering
+\caption{EBAY результаты}
+\label{apple_results}
+ \begin{adjustbox}{max width=0.47\textwidth}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Year       & Sharpe & Return    & \begin{tabular}[c]{@{}l@{}}Max \\ drawdown\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trades \\ Count\end{tabular} &  \begin{tabular}[c]{@{}l@{}}B\&H\\ returns\end{tabular} & \begin{tabular}[c]{@{}l@{}}B\&H\\ Sharpe\end{tabular}  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2007 Train & 1.90 & 47.86\% & 9.78\% & 39 & 9.01\% & 0.36\\ \hline
+\textbf{2008 Test}  & \textbf{ -0.77 } & \textbf{ -26.94\% } & \textbf{ 40.55\% } & \textbf{ 24 } & \textbf{ -52.55\% } & \textbf{ -1.42 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2008 Train & 2.70 & 74.23\% & 6.64\% & 33 & -52.55\% & -1.42\\ \hline
+\textbf{2009 Test}  & \textbf{ 3.38 } & \textbf{ 123.44\% } & \textbf{ 8.52\% } & \textbf{ 37 } & \textbf{ 55.25\% } & \textbf{ 1.24 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2009 Train & 2.92 & 78.65\% & 8.14\% & 36 & 55.25\% & 1.24\\ \hline
+\textbf{2010 Test}  & \textbf{ 0.83 } & \textbf{ 11.11\% } & \textbf{ 6.39\% } & \textbf{ 12 } & \textbf{ 16.91\% } & \textbf{ 0.62 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2010 Train & 1.49 & 24.08\% & 6.39\% & 27 & 16.91\% & 0.62\\ \hline
+\textbf{2011 Test}  & \textbf{ 0.85 } & \textbf{ 12.15\% } & \textbf{ 7.84\% } & \textbf{ 7 } & \textbf{ 4.68\% } & \textbf{ 0.24 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2011 Train & 1.45 & 25.98\% & 8.23\% & 30 & 4.68\% & 0.24\\ \hline
+2012 Test & 1.72 & 21.82\% & 4.96\% & 20 & 58.61\% & 1.73 \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2012 Train & 2.23 & 55.22\% & 7.50\% & 55 & 58.61\% & 1.73\\ \hline
+2013 Test & -1.57 & -21.31\% & 27.20\% & 31 & 1.61\% & 0.07 \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2013 Train & 1.36 & 15.80\% & 2.86\% & 39 & 1.61\% & 0.07\\ \hline
+\textbf{2014 Test}  & \textbf{ 0.68 } & \textbf{ 8.71\% } & \textbf{ 6.12\% } & \textbf{ 37 } & \textbf{ 4.62\% } & \textbf{ 0.20 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2014 Train & 3.20 & 28.06\% & 3.05\% & 28 & 4.62\% & 0.20\\ \hline
+ \textbf{2015 Test}  & \textbf{ -0.38 } & \textbf{ -28.73\% } & \textbf{ 48.15\% } & \textbf{ 25 } & \textbf{ -45.02\% } & \textbf{ -0.69 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2015 Train & 3.71 & 55.73\% & 2.98\% & 48 & -45.02\% & -0.69\\ \hline
+2016 Test & 0.14 & 3.32\% & 18.19\% & 16 & 11.61\% & 0.45 \\ \hline
+
+\end{tabular}
+\end{adjustbox}
+\end{table}\begin{table}[h]
+\centering
+\caption{INTC результаты}
+\label{apple_results}
+ \begin{adjustbox}{max width=0.47\textwidth}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Year       & Sharpe & Return    & \begin{tabular}[c]{@{}l@{}}Max \\ drawdown\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trades \\ Count\end{tabular} &  \begin{tabular}[c]{@{}l@{}}B\&H\\ returns\end{tabular} & \begin{tabular}[c]{@{}l@{}}B\&H\\ Sharpe\end{tabular}  \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2007 Train & 1.49 & 35.18\% & 11.73\% & 36 & 26.54\% & 1.00\\ \hline
+\textbf{2008 Test}  & \textbf{ -0.57 } & \textbf{ -24.27\% } & \textbf{ 38.93\% } & \textbf{ 19 } & \textbf{ -39.51\% } & \textbf{ -0.93 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2008 Train & 3.28 & 68.39\% & 2.63\% & 45 & -39.51\% & -0.93\\ \hline
+ \textbf{2009 Test}  & \textbf{ 1.35 } & \textbf{ 18.79\% } & \textbf{ 5.21\% } & \textbf{ 49 } & \textbf{ 30.67\% } & \textbf{ 0.90 }\\ \hline \rowcolor[HTML]{C0C0C0} 
+2009 Train & 4.09 & 94.73\% & 3.22\% & 36 & 30.67\% & 0.90\\ \hline
+2010 Test & -1.11 & -7.79\% & 13.79\% & 11 & 0.04\% & 0.01 \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2010 Train & 1.55 & 20.00\% & 4.01\% & 12 & 0.04\% & 0.01\\ \hline
+\textbf{2011 Test}  & \textbf{ 0.66 } & \textbf{ 6.92\% } & \textbf{ 1.16\% } & \textbf{ 7 } & \textbf{ 13.98\% } & \textbf{ 0.55 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2011 Train & 1.23 & 24.10\% & 9.28\% & 41 & 13.98\% & 0.55\\ \hline
+ \textbf{2012 Test}  & \textbf{ 0.62 } & \textbf{ 8.90\% } & \textbf{ 8.15\% } & \textbf{ 30 } & \textbf{ -14.49\% } & \textbf{ -0.86 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2012 Train & 0.64 & 7.47\% & 6.22\% & 47 & -14.49\% & -0.86\\ \hline
+ 2013 Test & 0.48 & 6.76\% & 6.00\% & 30 & 17.98\% & 0.85 \\ \hline
+ \rowcolor[HTML]{C0C0C0}
+2013 Train & 2.73 & 31.64\% & 4.69\% & 30 & 17.98\% & 0.85\\ \hline
+ \textbf{2014 Test}  & \textbf{ 3.53 } & \textbf{ 51.25\% } & \textbf{ 4.03\% } & \textbf{ 38 } & \textbf{ 39.15\% } & \textbf{ 1.59 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2014 Train & 3.53 & 51.25\% & 4.03\% & 38 & 39.15\% & 1.59\\ \hline
+ \textbf{2015 Test}  & \textbf{ 3.11 } & \textbf{ 45.35\% } & \textbf{ 2.43\% } & \textbf{ 42 } & \textbf{ -2.03\% } & \textbf{ -0.10 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2015 Train & 3.11 & 45.35\% & 2.43\% & 42 & -2.03\% & -0.10\\ \hline
+ 2016 Test & -0.35 & -0.91\% & 7.26\% & 17 & 6.75\% & 0.30 \\ \hline
+
+\end{tabular}
+\end{adjustbox}
+\end{table}\begin{table}[h]
+\centering
+\caption{ORCL результаты}
+\label{end}
+ \begin{adjustbox}{max width=0.47\textwidth}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+Year       & Sharpe & Return    & \begin{tabular}[c]{@{}l@{}}Max \\ drawdown\end{tabular} & \begin{tabular}[c]{@{}l@{}}Trades \\ Count\end{tabular} &  \begin{tabular}[c]{@{}l@{}}B\&H\\ returns\end{tabular} & \begin{tabular}[c]{@{}l@{}}B\&H\\ Sharpe\end{tabular}  \\ \hline
+\rowcolor[HTML]{C0C0C0}
+2007 Train & 2.38 & 35.94\% & 4.23\% & 48 & 26.42\% & 0.96\\ \hline
+ \textbf{2008 Test}  & \textbf{ 0.12 } & \textbf{ 2.86\% } & \textbf{ 15.15\% } & \textbf{ 42 } & \textbf{ -20.45\% } & \textbf{ -0.38 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2008 Train & 2.74 & 46.03\% & 6.35\% & 43 & -20.45\% & -0.38\\ \hline
+ \textbf{2009 Test}  & \textbf{ 4.25 } & \textbf{ 94.30\% } & \textbf{ 2.49\% } & \textbf{ 46 } & \textbf{ 32.90\% } & \textbf{ 1.04 }\\ \hline \rowcolor[HTML]{C0C0C0}
+2009 Train & 4.30 & 118.95\% & 3.29\% & 68 & 32.90\% & 1.04\\ \hline
+ \textbf{2010 Test}  & \textbf{ 1.82 } & \textbf{ 29.85\% } & \textbf{ 5.00\% } & \textbf{ 58 } & \textbf{ 24.37\% } & \textbf{ 0.99 }\\ \hline \rowcolor[HTML]{C0C0C0} 
+2010 Train & 1.58 & 21.62\% & 3.68\% & 34 & 24.37\% & 0.99\\ \hline
+\textbf{2011 Test}  & \textbf{ -0.27 } & \textbf{ 0.40\% } & \textbf{ 6.75\% } & \textbf{ 12 } & \textbf{ -16.88\% } & \textbf{ -0.50 }\\ \hline\rowcolor[HTML]{C0C0C0}
+2011 Train & 1.30 & 22.14\% & 14.05\% & 40 & -16.88\% & -0.50\\ \hline
+ 2012 Test & 0.73 & 8.22\% & 4.98\% & 35 & 25.65\% & 1.19 \\ \hline
+ \rowcolor[HTML]{C0C0C0} 
+2012 Train & 1.94 & 34.01\% & 8.55\% & 32 & 25.65\% & 1.19\\ \hline
+2013 Test & -0.38 & -5.24\% & 17.23\% & 30 & 8.61\% & 0.39 \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+2013 Train & 4.10 & 35.41\% & 1.92\% & 43 & 8.61\% & 0.39\\ \hline
+\textbf{2014 Test}  & \textbf{ 3.89 } & \textbf{ 34.14\% } & \textbf{ 1.98\% } & \textbf{ 39 } & \textbf{ 18.79\% } & \textbf{ 0.89 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2014 Train & 4.22 & 42.84\% & 2.19\% & 49 & 18.79\% & 0.89\\ \hline
+\textbf{2015 Test}  & \textbf{ 2.19 } & \textbf{ 25.82\% } & \textbf{ 5.39\% } & \textbf{ 42 } & \textbf{ -14.37\% } & \textbf{ -0.85 }\\ \hline\rowcolor[HTML]{C0C0C0} 
+2015 Train & 1.97 & 15.50\% & 2.16\% & 29 & -14.37\% & -0.85\\ \hline
+2016 Test & -1.48 & -8.11\% & 9.41\% & 16 & 6.92\% & 0.33 \\ \hline
+
+\end{tabular}
+\end{adjustbox}
+\end{table}

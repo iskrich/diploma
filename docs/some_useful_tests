@@ -1,0 +1,10 @@
+	#Usage leveler
+	#print leveler.getLevel("STO_level",0.4232)
+	#calculate crossing between Macd and Open
+	#data = add_crossing(data,"MA","Open")
+	#set rules for this crossing
+	#red_rule = NonTerminalNode("MA cross Open",1)
+	#red_rule.setRight(TerminalNode("LONG"))
+	#red_rule.setLeft(NonTerminalNode("MA cross Open",-1))
+	#red_rule.left.setRight(TerminalNode("SHORT"))
+	#start genetic

@@ -9,7 +9,7 @@ from Node import NonTerminalNode, TerminalNode
 from realTimeBT import Test, HoldAndBuy
 from statistics import Statistics
 from pyalgotrade.tools import yahoofinance
-from datetime import timedelta
+from datetime import datetime, date, time, timedelta
 import warnings
 import os, shutil
 from reporter import generatePDF
@@ -130,38 +130,14 @@ def clean_data():
 
 
 if __name__ == '__main__':
-	""""paste = "& %f\\%%  & %f"
-	for i in range(2006, 2018):
-		t = HoldAndBuy(yahoofinance.build_feed(['GOOG'], i, i, "."), 'GOOG')
-		stats = Statistics(t)
-		ret = stats.retAnalyzer.getCumulativeReturns()[-1] * 100
-		sharpe = stats.sharpeRatioAnalyzer.getSharpeRatio(0.05)
-		print paste % (ret, sharpe)
-	"""
 	parser = argparse.ArgumentParser(description='Process commands.')
-	parser.add_argument('instrument', metavar='I', type=str, nargs='+',
+	parser.add_argument('-instrument', metavar='I', type=str, nargs='+',
                     help='Target instrument')
-	parser.add_argument('start', metavar='S', type=str, nargs='+',
+	parser.add_argument('-start', metavar='S', type=str, nargs='+',
                     help='Start date')
-	parser.add_argument('end', metavar='E', type=str, nargs='+',
+	parser.add_argument('-end', metavar='E', type=str, nargs='+',
                     help='End date')
 	args = parser.parse_args()
-	print args
-	calcStrategy(args.instrument, args.start, args.end, 800, 20)
-	#table = ""
 
-	#warnings.filterwarnings('ignore')
-	#quickly test
-	#size = [10, 50, 100, 200, 250]
-	#gens = [5, 10, 15, 20, 25, 30]
-	#import time
-	#start1 = time.time()
-	#for i in instruments:
-	#	res = fitnessProgressTest(i, start, end)
-	#	print "Instrument %s" % i
-	#	print res
-	#end = time.time()
-	#elapsed = end - start1
-	#print elapsed
-	#i = 0
-	#clean_data()
+	calcStrategy(args.instrument, args.start[0], args.end[0], 200, 20)
+	clean_data()

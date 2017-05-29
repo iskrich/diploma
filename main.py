@@ -44,6 +44,8 @@ def calcStrategy(instrument, start, end, size, gens):
 	weights     = result["Weight"]
 	t = Test(quandl.build_feed("WIKI", [instrument], start_year2, start_year2, "."), instrument, weights)
 	stats = Statistics(t)
+	print "Final Strategy"
+	print calc_str
 	#generatePDF(stats, start+" по " +end, start2 + " по " + end2)
 	stats.printResults()
 

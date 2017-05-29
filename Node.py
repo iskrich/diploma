@@ -132,4 +132,5 @@ class NonTerminalNode(Node):
 		self.stats = stats
 
 	def __str__(self):
-		return str(self.index) + " is " + str(self.rate)
+		return "if %s then %s else %s" % (str(self.index) + " is " + str(self.rate), str(self.right), str(self.left))
+

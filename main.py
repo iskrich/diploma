@@ -8,7 +8,7 @@ import pandas as pd
 from Node import NonTerminalNode, TerminalNode
 from realTimeBT import Test, HoldAndBuy
 from statistics import Statistics
-from pyalgotrade.tools import yahoofinance
+from pyalgotrade.tools import yahoofinance, quandl
 from datetime import datetime, date, time, timedelta
 import warnings
 import os, shutil
@@ -33,16 +33,16 @@ def calcStrategy(instrument, start, end, size, gens):
 	result = parse_data_to_levels(data, tech_indicators)
 	data = result["data"]
 	calc_str = genetic_algoritm(size, gens, 0.25, 0.3, data, tech_indicators, instrument, start)
-	return  calc_str.fitness
-	start_year2 = int(start.split('-')[0]) + 1
-	start2      = str(start_year2) + "-" + start.split('-')[1] + "-" + start.split('-')[2]
-	end2        = str(start_year2) + "-" + end.split('-')[1] + "-"  + end.split('-')[2]
+
+	start_year2 = int(start.split('-')[2]) + 1
+	start2      =  start.split('-')[0] + "-" + start.split('-')[1] + "-" +  str(start_year2)
+	end2        =  end.split('-')[0] + "-"  + end.split('-')[1] + "-" + str(start_year2)
 	data2       = get_stock(instrument, start2, end2)
 	data2       = parse_data_to_levels(data2, tech_indicators)
 	getFitness(data2["data"],calc_str, setResults=True)
 	result      = data2["data"]
 	weights     = result["Weight"]
-	t = Test(yahoofinance.build_feed([instrument], start_year2, start_year2, "."), instrument, weights)
+	t = Test(quandl.build_feed("WIKI", [instrument], start_year2, start_year2, "."), instrument, weights)
 	stats = Statistics(t)
 	generatePDF(stats, start+" по " +end, start2 + " по " + end2)
 	stats.printResults()
@@ -133,11 +133,9 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description='Process commands.')
 	parser.add_argument('-instrument', metavar='I', type=str, nargs='+',
                     help='Target instrument')
-	parser.add_argument('-start', metavar='S', type=str, nargs='+',
+	parser.add_argument('-year', metavar='S', type=str, nargs='+',
                     help='Start date')
-	parser.add_argument('-end', metavar='E', type=str, nargs='+',
-                    help='End date')
 	args = parser.parse_args()
 
-	calcStrategy(args.instrument, args.start[0], args.end[0], 200, 20)
+	calcStrategy("AAPL", "01-05-2015", "12-28-2015", 20, 2)
 	clean_data()

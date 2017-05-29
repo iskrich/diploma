@@ -1,6 +1,6 @@
 from ete3 import Tree,TreeStyle, TextFace
 from RandomMakerTree import RandomMakerTree
-from pyalgotrade.tools import yahoofinance
+from pyalgotrade.tools import yahoofinance, quandl
 
 global data_set	
 global y_info
@@ -8,16 +8,6 @@ global y_info
 global total_mutate
 global total_crossovers
 global inst
-"""
-Module for genetic algoritm
-Includes: genetic operators, generate initiale population
-Working with red-rule
-red-rule - rule based on crossing some indicators, 
-can have rate:
- -1 crossing bottom
-  1 crossing top 
-  0 without crossing
-"""
 
 def del_logic_volation(individ):
 	nodes = individ.nodes
@@ -231,8 +221,8 @@ def find_not_red_nodes(individ):
 def genetic_algoritm(N, gens, s,m,data,tech_indicators, instrument, year, red_rules=None):
 	global data_set, total_crossovers, total_mutate, y_info, inst
 	inst = instrument
-	start = int(year.split('-')[0])
-	y_info = yahoofinance.build_feed([instrument], start, start, ".")
+	start = int(year.split('-')[2])
+	y_info = quandl.build_feed("WIKI", [instrument], start, start, ".")
 
 	total_crossovers = 0
 	total_mutate = 0

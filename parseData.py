@@ -1,11 +1,13 @@
 import pandas as pd
-import pandas.io.data as web
 import numpy as np
 import math
 import pyalgotrade
 import talib
 from utils import draw_series
 import matplotlib.pyplot as plt
+import pandas_datareader.data as web
+
+import datetime
 
 
 
@@ -75,10 +77,10 @@ def save_series(series, name):
 
 def get_stock(stock_name,start,end, save=False):
 	print "Download %s data" % stock_name
-	data = web.DataReader(stock_name, 'yahoo',start, end)
+	data = web.DataReader(stock_name, 'google',start, end)
+
 	if save:
 		save_series(data["Open"], "Price")
-	#ROFL
 	print "Calc addition indicators"
 	data = RSI(ATR(STO(data, save), save), save)
 	return data
@@ -141,3 +143,4 @@ def get_indicators(data):
 	allColumn = set(data.columns)
 	indicators = allColumn - set(['Close','Open','High','Low','Volume', 'Adj Close'])
 	return list(indicators)
+

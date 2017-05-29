@@ -1,4 +1,3 @@
-from ete3 import Tree,TreeStyle, TextFace
 from RandomMakerTree import RandomMakerTree
 from pyalgotrade.tools import yahoofinance, quandl
 
@@ -239,7 +238,7 @@ def genetic_algoritm(N, gens, s,m,data,tech_indicators, instrument, year, red_ru
 	print "Testing stage is over, best fitness is %f" % population[len(population)-1].fitness
 	print "Total mutates %d" % total_mutate
 	print "Total crossovers %d" % total_crossovers
-	createPic(population[len(population)-1],"data/strat_fruct")
+	#createPic(population[len(population)-1],"data/strat_fruct")
 	#population[len(population)-1].getFitness(data_set,False)
 	return population[len(population)-1]
 
